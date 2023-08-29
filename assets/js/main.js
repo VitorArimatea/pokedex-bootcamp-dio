@@ -16,17 +16,10 @@ function pokemonToHtml(pokemon){
   `
 } 
 
-const pokemonsList = (document.getElementById('pokemonsList'));
+const pokemonsList = (document.getElementById('pokemonsList'))
 
-pokeApi.getPokemons().then((pokemonList) => {
-  const listItems = []
-
-  for (let i = 0; i < pokemonList.length; i++) {
-    const pokemon = pokemonList[i];
-    listItems.push(pokemonToHtml(pokemon));
-  }
-
-  console.log(listItems)
-});
+pokeApi.getPokemons().then((pokemons = []) => {
+  pokemonsList.innerHTML += pokemons.map(pokemonToHtml).join('')
+})
 
   
