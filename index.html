@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/assets/css/pokedex.css">
 
   <!-- JS -->
+  <script defer src="assets/js/poke-api.js"></script>
   <script defer src="/assets/js/main.js"></script>
 </head>
 
@@ -28,7 +29,7 @@
   </header>
 
   <section class="content">
-    <ol class="pokemons-list">
+    <ol id="pokemonsList" class="pokemons-list">
       <li class="pokemon-card">
         <div class="pokemon-details">
           <h2 class="pokemon-name">Bulbasaur</h2>
@@ -40,32 +41,6 @@
             <li class="type-item">Poison</li>
           </ol>
           <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur">
-        </div>
-      </li>
-      <li class="pokemon-card">
-        <div class="pokemon-details">
-          <h2 class="pokemon-name">Ivysaur</h2>
-          <span class="pokemon-number">#002</span>
-        </div>
-        <div class="pokemon-details">
-          <ol class="types">
-            <li class="type-item">Grass</li>
-            <li class="type-item">Poison</li>
-          </ol>
-          <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" alt="Ivysaur">
-        </div>
-      </li>
-      <li class="pokemon-card">
-        <div class="pokemon-details">
-          <h2 class="pokemon-name">Venusaur</h2>
-          <span class="pokemon-number">#003</span>
-        </div>
-        <div class="pokemon-details">
-          <ol class="types">
-            <li class="type-item">Grass</li>
-            <li class="type-item">Poison</li>
-          </ol>
-          <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" alt="Venusaur">
         </div>
       </li>
     </ol>
