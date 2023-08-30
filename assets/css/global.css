@@ -11,6 +11,7 @@ header {
   padding: 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -45,6 +46,13 @@ header {
 @media screen and (min-width: 768px) {
   .content {
     max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .content {
+    max-width: 1115px;
     margin: 0 auto;
   }
 }
