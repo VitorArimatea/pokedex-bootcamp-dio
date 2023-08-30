@@ -19,8 +19,27 @@ header {
 }
 
 .content {
-  height: 100vh;
-  padding: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  color: white;
+  background-color: #222222;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background-color: #131313;
 }
 
 @media screen and (min-width: 768px) {
